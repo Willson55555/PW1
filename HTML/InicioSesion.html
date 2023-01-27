@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"
+        href="C:\Users\Sin Asignar\Desktop\Tareas universidad\7mo SEMESTRE\Programacion web\Proyecto\CSS\InicioSesion.css">
+    <title>Iniciar sesion</title>
+</head>
+
+<body>
+    <main>
+        <form class="formulario" id="formulario" method="get">
+
+            <!--Grupo Nombre de Usuario-->
+            <div class="formulario__grupo" id="grupo__nombre_usuario">
+                <label for="Nombre de Usuario" class="formulario__label">Nombre de Usuario</label>
+                <div class="formulario__grupo-input">
+                    <input name="Nombre de Usuario" class="formulario__input" type="text" required
+                        placeholder="Juan123">
+                </div>
+            </div>
+
+            <!--Grupo Contraseña-->
+            <div class="formulario__grupo" id="grupo__contraseña">
+                <label for="Contraseña" class="formulario__label">Contraseña</label>
+                <div class="formulario__grupo-input">
+                    <input name="Contraseña" class="formulario__input" type="text" required>
+                </div>
+            </div>
+
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fas fa-exclamation-triangle"></i><b>Error: </b>La combinacion de usuario y contraseña no es
+                    válida</p>
+            </div>
+
+            <div class="formulario__grupo formulario__grupo-btn-iniciar">
+                <button type="submit" class="formulario__btn">Iniciar Sesion</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito"></p>
+            </div>
+
+        </form>
+    </main>
+    <script src="C:\Users\Sin Asignar\Desktop\Tareas universidad\7mo SEMESTRE\Programacion web\Proyecto\JS\InicioSesion.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
