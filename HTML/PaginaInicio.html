@@ -1,19 +1,174 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Pagina de inicio</title>
-    <link rel="stylesheet" href="C:\Users\Sin Asignar\Desktop\Tareas universidad\7mo SEMESTRE\Programacion web\Proyecto\CSS\PaginaInicio.css">
+    <link rel="stylesheet"
+        href="C:\Users\Sin Asignar\Desktop\Tareas universidad\8vo SEMESTRE\Programacion web\Proyecto\CSS\PaginaInicio.css">
+    <script src="https://kit.fontawesome.com/a23bf762ef.js" crossorigin="anonymous"></script>
+    <link type="text/javascript" href="C:\Users\Sin Asignar\Desktop\Tareas universidad\8vo SEMESTRE\Programacion web\Proyecto\JS\Jquery.js">
 </head>
-<body>
-    <form method="get" style="margin: auto; width: 220px;" action="C:\Users\Sin Asignar\Desktop\Tareas universidad\7mo SEMESTRE\Programacion web\Proyecto\HTML\InicioSesion.html">   
-        <label id="label1" for="Crear_usuario">Inicie Sesion</label>
-        <input name="Iniciar_Sesion" type="submit" value="Iniciar Sesion">
-    </form>
 
-    <form method="get" style="margin: auto; width: 220px;" action="C:\Users\Sin Asignar\Desktop\Tareas universidad\7mo SEMESTRE\Programacion web\Proyecto\HTML\RegistroUsuario.html">  
-        <label id="label2" for="Crear_usuario">¿Aun no haz creado una cuenta?</label>
-        <input name="Crear_usuario" type="submit" value="Crear cuenta">
-    </form>
+<body>
+    <header>
+        <!--<form method="get"  action="C:\Users\Sin Asignar\Desktop\Tareas universidad\8vo SEMESTRE\Programacion web\Proyecto\HTML\InicioSesion.html">   
+            <label id="label1" for="Crear_usuario">Inicie Sesion</label>
+            <input name="Iniciar_Sesion" type="submit" value="Iniciar Sesion">
+        </form>-->
+        <a href="#" class="logo">
+            <i class="fa-solid fa-hashtag"></i>
+            <h1>U web</h1>
+        </a>
+
+        <div class="Buscador">
+            <input type="text" class="Buscador_barra">
+            <button class="Buscador_boton"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="Buscador_Avanzada"><i class="fa-solid fa-plus"></i></button>
+        </div>
+
+        <nav class="Opciones">
+            <a href="#" class="Opc_1">Registrarse</a>
+            <a href="#" class="Opc_2">Iniciar Sesion</a>
+            <!--<form method="get"  action="C:\Users\Sin Asignar\Desktop\Tareas universidad\8vo SEMESTRE\Programacion web\Proyecto\HTML\RegistroUsuario.html">
+            <label id="label1" for="Crear_usuario">Iniciar Sesion</label><br>
+            <input name="Iniciar_Sesion" type="submit" value="Iniciar Sesion"><br>
+            <label id="label2" for="Crear_usuario">¿Aun no haz creado una cuenta?</label><br>
+            <input name="Crear_usuario" type="submit" value="Crear cuenta">
+        </form>-->
+        </nav>
+
+        <!--<div class="Usuario">
+            <button><i class="fa-solid fa-user"></i></button>
+        </div>-->
+    </header>
+
+    <div class="Cuerpo">
+
+        <div class="sidebar">
+            <div class="menu">
+                <div class="item"><a href="#"><i></i>Elemento 1</a></div>
+                <div class="item">
+                    <a class="sub-boton"><i>Elemento 1.1</a>
+                    <div class="sub-menu">
+                        <a href="#"><i></i>SubElemento 1</a>
+                        <a href="#"><i></i>SubElemento 2</a>
+                        <a href="#"><i></i>SubElemento 3</a>
+                    </div>
+                </div>
+                <div class="item"><a href="#"><i></i>Elemento 2</a></div>
+                <div class="item"><a href="#"><i></i>Elemento 3</a></div>
+                <div class="item"><a href="#"><i></i>Elemento 4</a></div>
+                <div class="item"><a href="#"><i></i>Elemento 5</a></div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            $document.ready(function(){
+
+                $('sub-boton').click(function(){
+                    $(this).next('.sub-menu').slideToggle();
+                })
+            })
+        </script>
+
+        <div class="Cuerpo_contenido">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Voluptatibus nobis provident pariatur iusto sed ipsam eveniet, <br>
+                voluptatum aliquam magni iste dicta quidem quasi aspernatur. <br>
+                Accusamus dignissimos adipisci quaerat voluptatum expedita?<br>
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Voluptatibus nobis provident pariatur iusto sed ipsam eveniet, <br>
+                voluptatum aliquam magni iste dicta quidem quasi aspernatur. <br>
+                Accusamus dignissimos adipisci quaerat voluptatum expedita?<br>
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Voluptatibus nobis provident pariatur iusto sed ipsam eveniet, <br>
+                voluptatum aliquam magni iste dicta quidem quasi aspernatur. <br>
+                Accusamus dignissimos adipisci quaerat voluptatum expedita?<br>
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Voluptatibus nobis provident pariatur iusto sed ipsam eveniet, <br>
+                voluptatum aliquam magni iste dicta quidem quasi aspernatur. <br>
+                Accusamus dignissimos adipisci quaerat voluptatum expedita?<br>
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Voluptatibus nobis provident pariatur iusto sed ipsam eveniet, <br>
+                voluptatum aliquam magni iste dicta quidem quasi aspernatur. <br>
+                Accusamus dignissimos adipisci quaerat voluptatum expedita?<br>
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Voluptatibus nobis provident pariatur iusto sed ipsam eveniet, <br>
+                voluptatum aliquam magni iste dicta quidem quasi aspernatur. <br>
+                Accusamus dignissimos adipisci quaerat voluptatum expedita?<br>
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Voluptatibus nobis provident pariatur iusto sed ipsam eveniet, <br>
+                voluptatum aliquam magni iste dicta quidem quasi aspernatur. <br>
+                Accusamus dignissimos adipisci quaerat voluptatum expedita?<br>
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Voluptatibus nobis provident pariatur iusto sed ipsam eveniet, <br>
+                voluptatum aliquam magni iste dicta quidem quasi aspernatur. <br>
+                Accusamus dignissimos adipisci quaerat voluptatum expedita?<br>
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Voluptatibus nobis provident pariatur iusto sed ipsam eveniet, <br>
+                voluptatum aliquam magni iste dicta quidem quasi aspernatur. <br>
+                Accusamus dignissimos adipisci quaerat voluptatum expedita?<br>
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Voluptatibus nobis provident pariatur iusto sed ipsam eveniet, <br>
+                voluptatum aliquam magni iste dicta quidem quasi aspernatur. <br>
+                Accusamus dignissimos adipisci quaerat voluptatum expedita?<br>
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Voluptatibus nobis provident pariatur iusto sed ipsam eveniet, <br>
+                voluptatum aliquam magni iste dicta quidem quasi aspernatur. <br>
+                Accusamus dignissimos adipisci quaerat voluptatum expedita?<br>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer_box">
+                <div class="logo">
+                    <i class="fa-solid fa-hashtag"></i>
+                    <h1>U web</h1>
+                </div>
+                <div class="terminos">
+                    <p>La Empresa En Sí Es Una Empresa Muy Exitosa. ¿A Él El Placer De Las Penas, La Culpa De Los
+                        Placeres Fáciles, Resultarán De La Ganancia, Ni Le Explicaré Las Veces Que Quiere Del Odio, O Es
+                        Menor En Otras Ocasiones? Ciertamente Así Es.</p>
+                </div>
+            </div>
+
+            <div class="footer_box">
+                <h3>Creadores</h3>
+                <a href="#">A</a>
+                <a href="#">B</a>
+                <a href="#">C</a>
+                <a href="#">D</a>
+            </div>
+
+            <div class="footer_box">
+                <h3>Contacto</h3>
+                <a href="#">A</a>
+                <a href="#">B</a>
+                <a href="#">C</a>
+                <a href="#">D</a>
+            </div>
+
+            <div class="box__copyright">
+                <hr>
+                <p>Todos los derechos reservados © 2023 <b>#Web U</b></p>
+            </div>
+
+        </div>
+    </footer>
+
 </body>
+
 </html>
