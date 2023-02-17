@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -17,10 +17,10 @@ html {
 
 body {
     background: whitesmoke;
-}
+} */
 
-/*NAVBAR*/
-header {
+/* NAVBAR*/
+/*header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,7 +52,7 @@ a {
 }
 
 .Buscador_barra {
-    width: 210px;
+    width: 250px;
     height: 29px;
     border-radius: 19px;
     border-color: black;
@@ -89,7 +89,7 @@ a {
 
 .Opciones a {
     padding-right: 30px;
-}
+} */
 
 /*CUERPO*/
 .Cuerpo {
@@ -97,11 +97,15 @@ a {
     padding: 60px 0px;
 }
 
-.Cuerpo .sidebar {
-    width: 230px;
+.sidebar {
     background-color: rgba(0, 0, 0, 0.856);
-    position: fixed;
+    backdrop-filter: blur(15px);
+    width: 230px;
     height: 100;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    overflow-y: auto;
 }
 
 .sidebar .menu {
@@ -133,23 +137,69 @@ a {
 }
 
 .sidebar .menu .item a .dropdown{
+    rotate: -90deg;
     position:absolute;
     right: 0;
-    margin: 20px;
+    margin-top: 13px;
     transition:0.3s ease
 }
 .sidebar .menu .item .sub-menu{
-    background: rgb(33, 36, 43);
-    display:none;
+    background: rgb(38, 42, 53);
+    display: none;
 }
 .sidebar .menu .item .sub-menu a{
-    padding-left: 80px;
+    padding-left: 60px;
+}
+.rotar{
+    transform: rotate(90deg);
 }
 
 
 .Cuerpo_contenido {
     text-align: center;
     margin-top: 30px;
+}
+.Publicacion{
+    width: 600px;
+    height: auto;
+    padding: 10px 30px 10px 30px;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    margin-left: 360px;
+    margin-top: 40px;
+    text-align: start;
+}
+.Publicacion .Descripcion{
+    text-align: start;
+}
+
+.paginacion{
+    text-align: center;
+    margin-top: 30px;
+}
+.paginacion button{
+    background-color: rgb(24, 24, 24);
+    border: solid transparent;
+    border-radius: 10px;
+    height: 40px;
+    width: 40px;
+}
+.paginacion button:hover{
+cursor: pointer;
+}
+
+.paginacion i{
+font-size: 20px;
+color: white;
+}
+
+.paginacion .ant{
+    transform: rotate(90deg);
+}
+
+.paginacion .sig{
+    transform: rotate(-90deg);
 }
 
 /*.Usuario button i{
@@ -163,7 +213,7 @@ a {
     font-size: 35px;
 }*/
 /*FOOTER*/
-footer {
+/* footer {
     width: 100%;
     height: 470px;
     padding: 50px 0px;
@@ -213,4 +263,4 @@ footer {
     border: none;
     height: 1px;
     background-color: #7a7a7a;
-}
+} */

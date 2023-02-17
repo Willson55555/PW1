@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Pagina de inicio</title>
-    <link rel="stylesheet"
-        href="C:\Users\Sin Asignar\Desktop\Tareas universidad\8vo SEMESTRE\Programacion web\Proyecto\CSS\PaginaInicio.css">
+    <link rel="stylesheet" href="..\CSS\ElementosGenerales.css">
+    <link rel="stylesheet" href="..\CSS\PaginaInicio.css">
     <script src="https://kit.fontawesome.com/a23bf762ef.js" crossorigin="anonymous"></script>
-    <link type="text/javascript" href="C:\Users\Sin Asignar\Desktop\Tareas universidad\8vo SEMESTRE\Programacion web\Proyecto\JS\Jquery.js">
+    <!-- <link type="text/javascript" href="..\JS\Jquery.js"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 
 <body>
@@ -18,7 +19,7 @@
         </form>-->
         <a href="#" class="logo">
             <i class="fa-solid fa-hashtag"></i>
-            <h1>U web</h1>
+            <h1>U-web</h1>
         </a>
 
         <div class="Buscador">
@@ -43,100 +44,178 @@
         </div>-->
     </header>
 
-    <div class="Cuerpo">
+    <main>
+        <div class="Cuerpo">
 
-        <div class="sidebar">
-            <div class="menu">
-                <div class="item"><a href="#"><i></i>Elemento 1</a></div>
-                <div class="item">
-                    <a class="sub-boton"><i>Elemento 1.1</a>
-                    <div class="sub-menu">
-                        <a href="#"><i></i>SubElemento 1</a>
-                        <a href="#"><i></i>SubElemento 2</a>
-                        <a href="#"><i></i>SubElemento 3</a>
+            <div class="sidebar">
+                <div class="menu">
+                    <div class="item"><a href="#"><i></i>Elemento 1</a></div>
+                    <div class="item">
+                        <a class="sub-boton"><i></i>Elemento 2<i class="fa-solid fa-caret-down dropdown"></i></a>
+                        <div class="sub-menu">
+                            <a href="#">SubElemento 1</a>
+                            <a href="#">SubElemento 2</a>
+                        </div>
                     </div>
+                    <div class="item"><a href="#"><i></i>Elemento 3</a></div>
                 </div>
-                <div class="item"><a href="#"><i></i>Elemento 2</a></div>
-                <div class="item"><a href="#"><i></i>Elemento 3</a></div>
-                <div class="item"><a href="#"><i></i>Elemento 4</a></div>
-                <div class="item"><a href="#"><i></i>Elemento 5</a></div>
+            </div>
+            <script type="text/javascript">
+                $(document).ready(function () {
+
+                    $('.sub-boton').click(function () {
+                        $(this).next('.sub-menu').slideToggle();
+                        $(this).find('.dropdown').toggleClass('rotar');
+                    });
+                });
+            </script>
+
+            <div class="Cuerpo_contenido">
+                <div class="Publicacion">
+                    <h3><i class="fa-solid fa-user"></i>Usuario</h3>
+                    <h2>Titulo</h2>
+                    <p class="Descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatibus nobis provident pariatur iusto sed ipsam eveniet,
+                        voluptatum aliquam magni iste dicta quidem quasi aspernatur.
+                        Accusamus dignissimos adipisci quaerat voluptatum expedita?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatibus nobis provident pariatur iusto sed ipsam eveniet,
+                        voluptatum aliquam magni iste dicta quidem quasi aspernatur.
+                        Accusamus dignissimos adipisci quaerat voluptatum expedita?
+                    </p>
+                </div>
+                <div class="Publicacion">
+                    <h3><i class="fa-solid fa-user"></i>Usuario</h3>
+                    <h2>Titulo</h2>
+                    <p class="Descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatibus nobis provident pariatur iusto sed ipsam eveniet,
+                        voluptatum aliquam magni iste dicta quidem quasi aspernatur.
+                        Accusamus dignissimos adipisci quaerat voluptatum expedita?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatibus nobis provident pariatur iusto sed ipsam eveniet,
+                        voluptatum aliquam magni iste dicta quidem quasi aspernatur.
+                        Accusamus dignissimos adipisci quaerat voluptatum expedita?
+                    </p>
+                </div>
+                <div class="Publicacion">
+                    <h3><i class="fa-solid fa-user"></i>Usuario</h3>
+                    <h2>Titulo</h2>
+                    <p class="Descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatibus nobis provident pariatur iusto sed ipsam eveniet,
+                        voluptatum aliquam magni iste dicta quidem quasi aspernatur.
+                        Accusamus dignissimos adipisci quaerat voluptatum expedita?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatibus nobis provident pariatur iusto sed ipsam eveniet,
+                        voluptatum aliquam magni iste dicta quidem quasi aspernatur.
+                        Accusamus dignissimos adipisci quaerat voluptatum expedita?
+                    </p>
+                </div>
+                <div class="Publicacion">
+                    <h3><i class="fa-solid fa-user"></i>Usuario</h3>
+                    <h2>Titulo</h2>
+                    <p class="Descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatibus nobis provident pariatur iusto sed ipsam eveniet,
+                        voluptatum aliquam magni iste dicta quidem quasi aspernatur.
+                        Accusamus dignissimos adipisci quaerat voluptatum expedita?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatibus nobis provident pariatur iusto sed ipsam eveniet,
+                        voluptatum aliquam magni iste dicta quidem quasi aspernatur.
+                        Accusamus dignissimos adipisci quaerat voluptatum expedita?
+                    </p>
+                </div>
+                <div class="Publicacion">
+                    <h3><i class="fa-solid fa-user"></i>Usuario</h3>
+                    <h2>Titulo</h2>
+                    <p class="Descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatibus nobis provident pariatur iusto sed ipsam eveniet,
+                        voluptatum aliquam magni iste dicta quidem quasi aspernatur.
+                        Accusamus dignissimos adipisci quaerat voluptatum expedita?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatibus nobis provident pariatur iusto sed ipsam eveniet,
+                        voluptatum aliquam magni iste dicta quidem quasi aspernatur.
+                        Accusamus dignissimos adipisci quaerat voluptatum expedita?
+                    </p>
+                </div>
+                <div class="Publicacion">
+                    <h3><i class="fa-solid fa-user"></i>Usuario</h3>
+                    <h2>Titulo</h2>
+                    <p class="Descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatibus nobis provident pariatur iusto sed ipsam eveniet,
+                        voluptatum aliquam magni iste dicta quidem quasi aspernatur.
+                        Accusamus dignissimos adipisci quaerat voluptatum expedita?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatibus nobis provident pariatur iusto sed ipsam eveniet,
+                        voluptatum aliquam magni iste dicta quidem quasi aspernatur.
+                        Accusamus dignissimos adipisci quaerat voluptatum expedita?
+                    </p>
+                </div>
+                <div class="Publicacion">
+                    <h3><i class="fa-solid fa-user"></i>Usuario</h3>
+                    <h2>Titulo</h2>
+                    <p class="Descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatibus nobis provident pariatur iusto sed ipsam eveniet,
+                        voluptatum aliquam magni iste dicta quidem quasi aspernatur.
+                        Accusamus dignissimos adipisci quaerat voluptatum expedita?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatibus nobis provident pariatur iusto sed ipsam eveniet,
+                        voluptatum aliquam magni iste dicta quidem quasi aspernatur.
+                        Accusamus dignissimos adipisci quaerat voluptatum expedita?
+                    </p>
+                </div>
+                <div class="Publicacion">
+                    <h3><i class="fa-solid fa-user"></i>Usuario</h3>
+                    <h2>Titulo</h2>
+                    <p class="Descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatibus nobis provident pariatur iusto sed ipsam eveniet,
+                        voluptatum aliquam magni iste dicta quidem quasi aspernatur.
+                        Accusamus dignissimos adipisci quaerat voluptatum expedita?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatibus nobis provident pariatur iusto sed ipsam eveniet,
+                        voluptatum aliquam magni iste dicta quidem quasi aspernatur.
+                        Accusamus dignissimos adipisci quaerat voluptatum expedita?
+                    </p>
+                </div>
+                <div class="Publicacion">
+                    <h3><i class="fa-solid fa-user"></i>Usuario</h3>
+                    <h2>Titulo</h2>
+                    <p class="Descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatibus nobis provident pariatur iusto sed ipsam eveniet,
+                        voluptatum aliquam magni iste dicta quidem quasi aspernatur.
+                        Accusamus dignissimos adipisci quaerat voluptatum expedita?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatibus nobis provident pariatur iusto sed ipsam eveniet,
+                        voluptatum aliquam magni iste dicta quidem quasi aspernatur.
+                        Accusamus dignissimos adipisci quaerat voluptatum expedita?
+                    </p>
+                </div>
+                <div class="Publicacion">
+                    <h3><i class="fa-solid fa-user"></i>Usuario</h3>
+                    <h2>Titulo</h2>
+                    <p class="Descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatibus nobis provident pariatur iusto sed ipsam eveniet,
+                        voluptatum aliquam magni iste dicta quidem quasi aspernatur.
+                        Accusamus dignissimos adipisci quaerat voluptatum expedita?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatibus nobis provident pariatur iusto sed ipsam eveniet,
+                        voluptatum aliquam magni iste dicta quidem quasi aspernatur.
+                        Accusamus dignissimos adipisci quaerat voluptatum expedita?
+                    </p>
+                </div>
+
+                <div class="paginacion">
+                    <button><i class="fa-solid fa-caret-down ant"></i></button>
+                    <button><i class="fa-solid fa-caret-down sig"></i></button>
+                </div>
             </div>
         </div>
-
-        <script type="text/javascript">
-            $document.ready(function(){
-
-                $('sub-boton').click(function(){
-                    $(this).next('.sub-menu').slideToggle();
-                })
-            })
-        </script>
-
-        <div class="Cuerpo_contenido">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                Voluptatibus nobis provident pariatur iusto sed ipsam eveniet, <br>
-                voluptatum aliquam magni iste dicta quidem quasi aspernatur. <br>
-                Accusamus dignissimos adipisci quaerat voluptatum expedita?<br>
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                Voluptatibus nobis provident pariatur iusto sed ipsam eveniet, <br>
-                voluptatum aliquam magni iste dicta quidem quasi aspernatur. <br>
-                Accusamus dignissimos adipisci quaerat voluptatum expedita?<br>
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                Voluptatibus nobis provident pariatur iusto sed ipsam eveniet, <br>
-                voluptatum aliquam magni iste dicta quidem quasi aspernatur. <br>
-                Accusamus dignissimos adipisci quaerat voluptatum expedita?<br>
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                Voluptatibus nobis provident pariatur iusto sed ipsam eveniet, <br>
-                voluptatum aliquam magni iste dicta quidem quasi aspernatur. <br>
-                Accusamus dignissimos adipisci quaerat voluptatum expedita?<br>
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                Voluptatibus nobis provident pariatur iusto sed ipsam eveniet, <br>
-                voluptatum aliquam magni iste dicta quidem quasi aspernatur. <br>
-                Accusamus dignissimos adipisci quaerat voluptatum expedita?<br>
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                Voluptatibus nobis provident pariatur iusto sed ipsam eveniet, <br>
-                voluptatum aliquam magni iste dicta quidem quasi aspernatur. <br>
-                Accusamus dignissimos adipisci quaerat voluptatum expedita?<br>
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                Voluptatibus nobis provident pariatur iusto sed ipsam eveniet, <br>
-                voluptatum aliquam magni iste dicta quidem quasi aspernatur. <br>
-                Accusamus dignissimos adipisci quaerat voluptatum expedita?<br>
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                Voluptatibus nobis provident pariatur iusto sed ipsam eveniet, <br>
-                voluptatum aliquam magni iste dicta quidem quasi aspernatur. <br>
-                Accusamus dignissimos adipisci quaerat voluptatum expedita?<br>
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                Voluptatibus nobis provident pariatur iusto sed ipsam eveniet, <br>
-                voluptatum aliquam magni iste dicta quidem quasi aspernatur. <br>
-                Accusamus dignissimos adipisci quaerat voluptatum expedita?<br>
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                Voluptatibus nobis provident pariatur iusto sed ipsam eveniet, <br>
-                voluptatum aliquam magni iste dicta quidem quasi aspernatur. <br>
-                Accusamus dignissimos adipisci quaerat voluptatum expedita?<br>
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                Voluptatibus nobis provident pariatur iusto sed ipsam eveniet, <br>
-                voluptatum aliquam magni iste dicta quidem quasi aspernatur. <br>
-                Accusamus dignissimos adipisci quaerat voluptatum expedita?<br>
-            </p>
-        </div>
-    </div>
+    </main>
 
     <footer>
         <div class="footer_container">
             <div class="footer_box">
                 <div class="logo">
                     <i class="fa-solid fa-hashtag"></i>
-                    <h1>U web</h1>
+                    <h1>U-Web</h1>
                 </div>
                 <div class="terminos">
                     <p>La Empresa En Sí Es Una Empresa Muy Exitosa. ¿A Él El Placer De Las Penas, La Culpa De Los

@@ -1,0 +1,10 @@
+header .Opciones{ 
+    display: none;
+}
+.PerfilUsuario button{
+    background-color: rgb(24, 24, 24);
+    border: solid transparent;
+    border-radius: 10px;
+    height: 40px;
+    width: 40px;
+}

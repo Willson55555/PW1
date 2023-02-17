@@ -5,45 +5,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="stylesheet" type="text/css"
-        href="C:\Users\Sin Asignar\Desktop\Tareas universidad\7mo SEMESTRE\Programacion web\Proyecto\CSS\InicioSesion.css">-->
+    <link rel="stylesheet" href="..\CSS\ElementosGenerales.css">
+    <link rel="stylesheet" type="text/css" href="..\CSS\InicioSesion.css">
+    <script src="https://kit.fontawesome.com/a23bf762ef.js" crossorigin="anonymous"></script>
     <title>Iniciar sesion</title>
 </head>
 
 <body>
+    <header>
+        <a href="#" class="logo">
+            <i class="fa-solid fa-hashtag"></i>
+            <h1>U-web</h1>
+        </a>
+
+        <div class="Buscador">
+            <input type="text" class="Buscador_barra">
+            <button class="Buscador_boton"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="Buscador_Avanzada"><i class="fa-solid fa-plus"></i></button>
+        </div>
+
+        <nav class="Opciones">
+            <a href="#" class="Opc_1">Registrarse</a>
+            <a href="#" class="Opc_2">Iniciar Sesion</a>
+    </header>
+
     <main>
-        <form class="formulario" id="formulario" method="get">
+        <div class="cuadro">
+            <div class="contenido">
+                <form class="formulario" id="formulario" method="get">
+                    <ul class="lista">
+                        <li>
+                            <h1 class="titulo">Iniciar Sesion</h1>
+                        </li>
+                        <!--Grupo Nombre de Usuario-->
+                        <li>
+                            <div class="formulario__grupo" id="grupo__nombre_usuario">
+                                <label for="Nombre de Usuario" class="formulario__label">Nombre de Usuario</label>
+                                <div class="formulario__grupo-input">
+                                    <input name="Nombre de Usuario" class="formulario__input" type="text" required
+                                        placeholder="Juan123">
+                                </div>
+                            </div>
+                        </li>
 
-            <!--Grupo Nombre de Usuario-->
-            <div class="formulario__grupo" id="grupo__nombre_usuario">
-                <label for="Nombre de Usuario" class="formulario__label">Nombre de Usuario</label>
-                <div class="formulario__grupo-input">
-                    <input name="Nombre de Usuario" class="formulario__input" type="text" required
-                        placeholder="Juan123">
-                </div>
+                        <!--Grupo Contraseña-->
+                        <li>
+                            <div class="formulario__grupo" id="grupo__contraseña">
+                                <label for="Contraseña" class="formulario__label">Contraseña</label>
+                                <div class="formulario__grupo-input">
+                                    <input name="Contraseña" class="formulario__input" type="text" required>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="formulario__mensaje" id="formulario__mensaje">
+                                <p><i class="fas fa-exclamation-triangle"></i><b>Error: </b>La combinacion de usuario y
+                                    contraseña no es
+                                    válida</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="formulario__grupo formulario__grupo-btn-iniciar">
+                                <button type="submit" class="formulario__btn">Iniciar Sesion</button>
+                                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito"></p>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </form>
             </div>
-
-            <!--Grupo Contraseña-->
-            <div class="formulario__grupo" id="grupo__contraseña">
-                <label for="Contraseña" class="formulario__label">Contraseña</label>
-                <div class="formulario__grupo-input">
-                    <input name="Contraseña" class="formulario__input" type="text" required>
-                </div>
-            </div>
-
-            <div class="formulario__mensaje" id="formulario__mensaje">
-                <p><i class="fas fa-exclamation-triangle"></i><b>Error: </b>La combinacion de usuario y contraseña no es
-                    válida</p>
-            </div>
-
-            <div class="formulario__grupo formulario__grupo-btn-iniciar">
-                <button type="submit" class="formulario__btn">Iniciar Sesion</button>
-                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito"></p>
-            </div>
-
-        </form>
+        </div>
     </main>
-    <script src="C:\Users\Sin Asignar\Desktop\Tareas universidad\7mo SEMESTRE\Programacion web\Proyecto\JS\InicioSesion.js"></script>
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer_box">
+                <div class="logo">
+                    <i class="fa-solid fa-hashtag"></i>
+                    <h1>U-Web</h1>
+                </div>
+                <div class="terminos">
+                    <p>La Empresa En Sí Es Una Empresa Muy Exitosa. ¿A Él El Placer De Las Penas, La Culpa De Los
+                        Placeres Fáciles, Resultarán De La Ganancia, Ni Le Explicaré Las Veces Que Quiere Del Odio, O Es
+                        Menor En Otras Ocasiones? Ciertamente Así Es.</p>
+                </div>
+            </div>
+
+            <div class="footer_box">
+                <h3>Creadores</h3>
+                <a href="#">A</a>
+                <a href="#">B</a>
+                <a href="#">C</a>
+                <a href="#">D</a>
+            </div>
+
+            <div class="footer_box">
+                <h3>Contacto</h3>
+                <a href="#">A</a>
+                <a href="#">B</a>
+                <a href="#">C</a>
+                <a href="#">D</a>
+            </div>
+
+            <div class="box__copyright">
+                <hr>
+                <p>Todos los derechos reservados © 2023 <b>#Web U</b></p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script
+        src="..\JS\InicioSesion.js"></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
 
