@@ -1,3 +1,106 @@
-.PerfilUsuario{
+.PerfilUsuario {
     display: none;
+}
+
+.Cuerpo {
+    align-items: center;
+}
+
+.Filtros {
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    height: auto;
+    width: 600px;
+    padding: 10px 30px 10px 30px;
+    margin-left: 360px;
+    background: cornflowerblue;
+    border-radius: 10px;
+}
+
+.columnas {
+    column-count: 3;
+    column-gap: 0px;
+    list-style-type: none;
+}
+.columnas li{
+    /* display: flex; */
+    align-content: center;
+}
+.columnas li label{
+    font-weight: 500;
+}
+
+.Filtros .Categorias {
+    width: 150px;
+    height: 30px;
+}
+.columnas .fecha{
+    width: 150px;
+    height: 30px;
+}
+
+.Filtros .Categorias select {
+    width: 250px;
+    height: 29px;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+}
+
+.Cuerpo {
+    min-height: calc(100vh-60px-470px);
+    padding: 60px 0px;
+}
+
+.Cuerpo_contenido {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.Publicacion {
+    width: 600px;
+    height: auto;
+    padding: 10px 30px 10px 30px;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    margin-left: 360px;
+    margin-top: 40px;
+    text-align: start;
+}
+
+.Publicacion .Descripcion {
+    text-align: start;
+}
+
+.paginacion {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.paginacion button {
+    background-color: rgb(24, 24, 24);
+    border: solid transparent;
+    border-radius: 10px;
+    height: 40px;
+    width: 40px;
+    margin-right: 30px;
+}
+
+.paginacion button:hover {
+    cursor: pointer;
+}
+
+.paginacion i {
+    font-size: 20px;
+    color: white;
+}
+
+.paginacion .ant {
+    transform: rotate(90deg);
+}
+
+.paginacion .sig {
+    transform: rotate(-90deg);
 }
