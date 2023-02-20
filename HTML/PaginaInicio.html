@@ -31,17 +31,38 @@
         <nav class="Opciones">
             <a href="#" class="Opc_1">Registrarse</a>
             <a href="#" class="Opc_2">Iniciar Sesion</a>
-            <!--<form method="get"  action="C:\Users\Sin Asignar\Desktop\Tareas universidad\8vo SEMESTRE\Programacion web\Proyecto\HTML\RegistroUsuario.html">
-            <label id="label1" for="Crear_usuario">Iniciar Sesion</label><br>
-            <input name="Iniciar_Sesion" type="submit" value="Iniciar Sesion"><br>
-            <label id="label2" for="Crear_usuario">¿Aun no haz creado una cuenta?</label><br>
-            <input name="Crear_usuario" type="submit" value="Crear cuenta">
-        </form>-->
         </nav>
 
-        <!--<div class="Usuario">
-            <button><i class="fa-solid fa-user"></i></button>
-        </div>-->
+        <div class="PerfilUsuario">
+            <button onclick="mostrar()"><i class="fa-solid fa-user"></i></button>
+
+            <div class="sub-menu-wrap" id="SubMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <h2>Usuario</h2>
+                    </div>
+                    <hr>
+                    <a href="#" class="sub-menu-link">
+                        <i class="fa-solid fa-user"></i>
+                        <p>Ver perfil</p>
+                        <span></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <p>Cerrar Sesion</p>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let SubMenu = document.getElementById("SubMenu");
+            function mostrar(){
+                SubMenu.classList.toggle("open-menu")
+            }
+        </script>
     </header>
 
     <main>

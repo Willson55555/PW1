@@ -9,6 +9,10 @@ main {
     padding: 100px;
 }
 
+.PerfilUsuario{
+    display: none;
+}
+
 .cuadro {
     width: 600px;
     height: auto;

@@ -29,13 +29,40 @@
         </nav>
 
         <div class="PerfilUsuario">
-            <button><i class="fa-solid fa-user"></i></button>
+            <button onclick="mostrar()"><i class="fa-solid fa-user"></i></button>
+
+            <div class="sub-menu-wrap" id="SubMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <h2>Usuario</h2>
+                    </div>
+                    <hr>
+                    <a href="#" class="sub-menu-link">
+                        <i class="fa-solid fa-user"></i>
+                        <p>Ver perfil</p>
+                        <span></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <p>Cerrar Sesion</p>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
         </div>
+
+        <script>
+            let SubMenu = document.getElementById("SubMenu");
+            function mostrar(){
+                SubMenu.classList.toggle("open-menu")
+            }
+        </script>
     </header>
 
     <main>
         <div class="cuadro">
-            
+
         </div>
         <section class="seccion-perfil-usuario">
             <div class="perfil-usuario-header">
@@ -62,7 +89,7 @@
                         <li><i class="icono fa-solid fa-users"></i>Apellidos:</li>
                         <li><i class="icono fa-solid fa-envelope"></i>Direccion de correo:</li>
                         <li><i class="icono fa-solid fa-baby">/<i class="fa-solid fa-person-cane"></i></i>Edad:</li>
-                        <li><a href="#" class="Editar">Editar</a></li>
+                        <li><a href="#" class="Editar"><i class="icono fa-solid fa-user-pen"></i>Editar</a></li>
                     </ul>
                     <!-- <ul class="lista-datos">
                         <li><i class="icono fas fa-map-marker-alt"></i> Ubicacion.</li>

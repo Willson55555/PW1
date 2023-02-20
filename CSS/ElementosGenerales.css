@@ -92,6 +92,77 @@ a {
 .Opciones a {
     padding-right: 30px;
 }
+.Opciones a:hover{
+    font-weight: 600;
+}
+
+.PerfilUsuario button{
+    background-color: rgb(24, 24, 24);
+    border: solid transparent;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 40px;
+}
+.PerfilUsuario button i{
+    color: rgb(255, 255, 255);
+}
+
+.PerfilUsuario button:hover{
+    cursor: pointer;
+}
+.PerfilUsuario .sub-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    width: 320px;
+    border-radius: 37px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.PerfilUsuario .sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+
+.PerfilUsuario .sub-menu{
+    background: white;
+    padding: 20px;
+    margin: 10px;
+}
+.PerfilUsuario .user-info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.user-info h2{
+    font-weight: 500;
+}
+.user-info i{
+    font-size: 40px;
+    width: 50px;
+    border-radius: 50%;
+}
+.sub-menu .sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+}
+.sub-menu .sub-menu-link p{
+    width: 100%;
+}
+.sub-menu .sub-menu-link p:hover{
+    font-weight: 600;
+}
+.sub-menu .sub-menu-link i{
+    width: 40px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 15px;
+}
 
 /*FOOTER*/
 footer {

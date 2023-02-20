@@ -91,6 +91,10 @@ a {
     padding-right: 30px;
 } */
 
+.PerfilUsuario{
+    display: none;
+}
+
 /*CUERPO*/
 .Cuerpo {
     min-height: calc(100vh-60px-470px);

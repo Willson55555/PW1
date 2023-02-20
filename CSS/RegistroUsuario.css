@@ -27,11 +27,12 @@ main {
     padding: 20px 0;
 }
 
-ul {
+.cuadro ul {
     list-style-type: none;
     text-align: center;
 }
-ul label{
+
+.cuadro ul label{
     text-align: start;
     margin-left: 60px;
 }

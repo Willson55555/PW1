@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="..\CSS\ElementosGenerales.css">
+    <link rel="stylesheet" type="text/css" href="..\CSS\BusquedaAvanzada.css">
+    <script src="https://kit.fontawesome.com/a23bf762ef.js" crossorigin="anonymous"></script>
+    <title>Busqueda Avanzada</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <i class="fa-solid fa-hashtag"></i>
+            <h1>U-Web</h1>
+        </a>
+
+        <div class="Buscador">
+            <input type="text" class="Buscador_barra">
+            <button class="Buscador_boton"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="Buscador_Avanzada"><i class="fa-solid fa-plus"></i></button>
+        </div>
+
+        <nav class="Opciones">
+            <a href="#" class="Opc_1">Registrarse</a>
+            <a href="#" class="Opc_2">Iniciar Sesion</a>
+        </nav>
+
+        <div class="PerfilUsuario">
+            <button onclick="mostrar()"><i class="fa-solid fa-user"></i></button>
+
+            <div class="sub-menu-wrap" id="SubMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <h2>Usuario</h2>
+                    </div>
+                    <hr>
+                    <a href="#" class="sub-menu-link">
+                        <i class="fa-solid fa-user"></i>
+                        <p>Ver perfil</p>
+                        <span></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <p>Cerrar Sesion</p>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let SubMenu = document.getElementById("SubMenu");
+            function mostrar(){
+                SubMenu.classList.toggle("open-menu")
+            }
+        </script>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer_box">
+                <div class="logo">
+                    <i class="fa-solid fa-hashtag"></i>
+                    <h1>U-web</h1>
+                </div>
+                <div class="terminos">
+                    <p>La Empresa En Sí Es Una Empresa Muy Exitosa. ¿A Él El Placer De Las Penas, La Culpa De Los
+                        Placeres Fáciles, Resultarán De La Ganancia, Ni Le Explicaré Las Veces Que Quiere Del Odio, O Es
+                        Menor En Otras Ocasiones? Ciertamente Así Es.</p>
+                </div>
+            </div>
+
+            <div class="footer_box">
+                <h3>Creadores</h3>
+                <a href="#">A</a>
+                <a href="#">B</a>
+                <a href="#">C</a>
+                <a href="#">D</a>
+            </div>
+
+            <div class="footer_box">
+                <h3>Contacto</h3>
+                <a href="#">A</a>
+                <a href="#">B</a>
+                <a href="#">C</a>
+                <a href="#">D</a>
+            </div>
+
+            <div class="box__copyright">
+                <hr>
+                <p>Todos los derechos reservados © 2023 <b>#U-Web</b></p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

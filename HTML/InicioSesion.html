@@ -28,6 +28,37 @@
             <a href="#" class="Opc_1">Registrarse</a>
             <a href="#" class="Opc_2">Iniciar Sesion</a>
         </nav>
+
+        <div class="PerfilUsuario">
+            <button onclick="mostrar()"><i class="fa-solid fa-user"></i></button>
+
+            <div class="sub-menu-wrap" id="SubMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <h2>Usuario</h2>
+                    </div>
+                    <hr>
+                    <a href="#" class="sub-menu-link">
+                        <i class="fa-solid fa-user"></i>
+                        <p>Ver perfil</p>
+                        <span></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <p>Cerrar Sesion</p>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let SubMenu = document.getElementById("SubMenu");
+            function mostrar(){
+                SubMenu.classList.toggle("open-menu")
+            }
+        </script>
     </header>
 
     <main>

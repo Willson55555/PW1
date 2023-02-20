@@ -2,23 +2,6 @@ header .Opciones{
     display: none;
 }
 
-.PerfilUsuario button{
-    background-color: rgb(24, 24, 24);
-    border: solid transparent;
-    border-radius: 19px;
-    height: 40px;
-    width: 40px;
-    margin-right: 40px;
-}
-.PerfilUsuario button i{
-    color: rgb(255, 255, 255);
-}
-
-.PerfilUsuario button:hover{
-    cursor: pointer;
-}
-
-
 .seccion-perfil-usuario .perfil-usuario-body,
 .seccion-perfil-usuario {
     display: flex;
@@ -145,7 +128,7 @@ header .Opciones{
     padding: 5px 0;
 }
 
-.seccion-perfil-usuario .lista-datos li>.icono {
+.seccion-perfil-usuario .lista-datos .icono {
     margin-right: 1rem;
     font-size: 1.2rem;
     vertical-align: middle;
