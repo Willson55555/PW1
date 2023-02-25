@@ -10,6 +10,8 @@
 .Cuerpo_contenido {
     /* text-align: center; */
     margin-top: 30px;
+    justify-content: center;
+    display: flex;
 }
 
 .Publicacion{
@@ -19,9 +21,15 @@
     background-color: cornflowerblue;
     border-radius: 10px;
     box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.329);
-    margin-left:360px;
+    /* margin-left:360px; */
     margin-top: 40px;
     text-align: start;
+}
+.Publicacion .header1{
+    display: block;
+}
+.Publicacion .header2{
+    display: none;
 }
 .Publicacion ul{
     list-style: none;
@@ -30,6 +38,12 @@
     width: 300px;
     border-radius: 10px;
     padding: 5px;
+}
+.Publicacion .Categorias {
+    width: 150px;
+    height: 30px;
+    margin: 10px 0 10px 0;
+    border-radius: 10px;
 }
 .Publicacion .Descripcion{
     border-radius: 10px;

@@ -34,10 +34,12 @@
 .Filtros .Categorias {
     width: 150px;
     height: 30px;
+    border-radius: 10px;
 }
 .columnas .fecha{
     width: 150px;
     height: 30px;
+    border-radius: 10px;
 }
 
 .Filtros .Categorias select {
