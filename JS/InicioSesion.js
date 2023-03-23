@@ -8,14 +8,15 @@ const campos={
 }
 
 const validarFormulario = (e) => {
-    switch (e.target.name) {
-        case "Nombre de Usuario":
-            //VALIDAR QUE SE HAYA LLENADO
-            break;
-        case "Contraseña":
-            //VALIDAR QUE SE HAYA LLENADO
-            break;
-    }
+    console.log(e.target.name);
+    // switch (e.target.name) {
+    //     case "Nombre de Usuario":
+    //         //VALIDAR QUE SE HAYA LLENADO
+    //         break;
+    //     case "Contraseña":
+    //         //VALIDAR QUE SE HAYA LLENADO
+    //         break;
+    // }
 }
 
 inputs.forEach((input) => {

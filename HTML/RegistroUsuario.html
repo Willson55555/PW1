@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="..\CSS\ElementosGenerales.css">
     <link rel="stylesheet" type="text/css" href="..\CSS\RegistroUsuario.css">
     <script src="https://kit.fontawesome.com/a23bf762ef.js" crossorigin="anonymous"></script>
-    <!-- <link type="text/javascript" href="..\JS\RegistroUsuario.js"> -->
+    <link type="text/javascript" href="..\JS\RegistroUsuario.js">
 </head>
 
 <body>
@@ -138,9 +138,9 @@
                             <label for="Imagen de Perfil" class="formulario__label">Imagen de Perfil</label>
                             <div class="formulario__grupo-input">
                                 <input name="Imagen de Perfil" id="Imagen de Perfil" class="formulario__input"
-                                    type="image" accept="image/png,image/jpeg">
+                                    type="file" accept="image/png,image/jpeg">
                                 <span class="material-symbols-rounded">cancel</span>
-                                <p class="formulario__input-error">No se ha seleccionado una imagen.</p>
+                                <p class="formulario__input-error">Extensión no permitida. Utiliza: .jpeg/.jpg/.png/.</p>
                             </div>
                         </div>
 
@@ -246,7 +246,7 @@
         </div>
     </footer>
 
-    <!-- <script src="..JS\RegistroUsuario.js"></script> -->
+    <script src="..\JS\RegistroUsuario.js"></script>
 </body>
 
 </html>
