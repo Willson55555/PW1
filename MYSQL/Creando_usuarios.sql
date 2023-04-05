@@ -1,0 +1,3 @@
+INSERT INTO `blog_web_1`.`tb_usuario` (`IDStatusUser`, `Nombre`, `ApellidoPa`, `ApellidoMa`, `FechaNac`, `Correo`, `Usuario`, `Contra`) VALUES ('1', 'Nombre2', 'ApellidoPa', 'ApellidoMa', '2002-01-02', 'correo2@gmail.com', 'usuario', 'contra');
+
+"INSERT INTO `blog_web_1`.`tb_usuario` (`IDStatusUser`, `Nombre`, `ApellidoPa`, `ApellidoMa`, `FechaNac`, `Correo`, `Usuario`, `Contra`) VALUES ('1', '"+Nombre+"', '"+ApellidoPa+"', '"+ApellidoMa+"', '"+FechaNac+"', '"+Correo+"', '"+Usuario+"', '"+Contra+"');"
